@@ -13,7 +13,7 @@ import argparse
 import csv
 import logging
 import sqlite3
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from chat_insight import config
@@ -113,7 +113,7 @@ def to_iso_utc(raw: object) -> str:
     if raw is None:
         return ""
     try:
-        return datetime.fromtimestamp(int(raw), tz=timezone.utc).isoformat()  # type: ignore[call-overload]
+        return datetime.fromtimestamp(int(raw), tz=UTC).isoformat()  # type: ignore[call-overload]
     except (ValueError, TypeError):
         pass
     try:
@@ -121,8 +121,8 @@ def to_iso_utc(raw: object) -> str:
     except ValueError:
         return str(raw)
     if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(timezone.utc).isoformat()
+        dt = dt.replace(tzinfo=UTC)
+    return dt.astimezone(UTC).isoformat()
 
 
 def export_messages(

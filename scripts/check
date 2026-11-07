@@ -1,0 +1,8 @@
+#!/bin/sh
+# One quality gate, used by the pre-push hook and CI: lint, format check, tests. Fails closed.
+set -eu
+cd "$(dirname "$0")/.."
+uv run --frozen ruff check .
+uv run --frozen ruff format --check .
+uv run --frozen pytest -q
+echo "check passed"

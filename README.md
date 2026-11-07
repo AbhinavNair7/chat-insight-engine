@@ -13,7 +13,7 @@ for every claim. An LLM router decides per question whether to search a few rele
 > That data and those reports are private and **not** in this repository. Everything here runs on synthetic data.
 
 [![CI](https://github.com/AbhinavNair7/chat-insight-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/AbhinavNair7/chat-insight-engine/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
@@ -168,7 +168,7 @@ with a flag (`--help` on any command).
 ```bash
 uv sync
 uv run pytest            # 106 tests, no network: SQLite fixtures, temp Chroma stores, a scripted fake LLM
-uv run ruff check . && uv run ruff format --check .
+./scripts/check          # the same gate CI runs: ruff lint + format check + tests
 ```
 
 The tests cover schema validation and group discovery, chunk coverage (no message lost or duplicated), manifest
