@@ -1,0 +1,21 @@
+timestamp,chat_jid,sender,message,message_id
+2025-01-06T09:00:00+00:00,demo-group@g.us,member_1,Has anyone tried using AI tools for patient triage yet?,MSG0000
+2025-01-06T09:07:00+00:00,demo-group@g.us,member_2,We've been piloting an LLM-based summarisation tool for discharge letters.,MSG0001
+2025-01-06T09:14:00+00:00,demo-group@g.us,member_3,"The trust is cautious about data governance, so all models run locally.",MSG0002
+2025-01-06T09:21:00+00:00,demo-group@g.us,member_4,New national guidance on AI-assisted diagnostics came out last week.,MSG0003
+2025-01-06T09:28:00+00:00,demo-group@g.us,member_5,I demoed a chatbot to the consultant team; mixed reactions honestly.,MSG0004
+2025-01-06T09:35:00+00:00,demo-group@g.us,member_1,The key issue is hallucination. Clinicians need output they can trust.,MSG0005
+2025-01-06T09:42:00+00:00,demo-group@g.us,member_2,We're using retrieval-augmented generation to ground answers in local guidelines.,MSG0006
+2025-01-06T09:49:00+00:00,demo-group@g.us,member_3,Anyone using ambient AI scribes in outpatient clinics?,MSG0007
+2025-01-06T09:56:00+00:00,demo-group@g.us,member_4,"We trialled an ambient scribe. Impressive, but it raised consent questions.",MSG0008
+2025-01-06T10:03:00+00:00,demo-group@g.us,member_5,Consent and transparency are central to our deployment checklist.,MSG0009
+2025-01-06T10:10:00+00:00,demo-group@g.us,member_1,Our CCIO just approved a six-month AI pilot for radiology.,MSG0010
+2025-01-06T10:17:00+00:00,demo-group@g.us,member_2,The radiology AI flagged 12 incidental findings last month and all were confirmed.,MSG0011
+2025-01-06T10:24:00+00:00,demo-group@g.us,member_3,Training clinicians to understand model confidence scores is underrated.,MSG0012
+2025-01-06T10:31:00+00:00,demo-group@g.us,member_4,"Data quality upstream is the real bottleneck, not the model.",MSG0013
+2025-01-06T10:38:00+00:00,demo-group@g.us,member_5,"Procurement takes 18 months, by which time the product has changed twice.",MSG0014
+2025-01-06T10:45:00+00:00,demo-group@g.us,member_1,We run a 7B open-weights model on a laptop and it is good enough for note drafting.,MSG0015
+2025-01-06T10:52:00+00:00,demo-group@g.us,member_2,Still copying results between the lab system and the EPR by hand every morning.,MSG0016
+2025-01-06T10:59:00+00:00,demo-group@g.us,member_3,"Annotation is expensive, so we're trying weak supervision.",MSG0017
+2025-01-06T11:06:00+00:00,demo-group@g.us,member_4,There are real concerns about AI replacing clinical judgement.,MSG0018
+2025-01-06T11:13:00+00:00,demo-group@g.us,member_5,"AI should augment, not replace. That's our north star.",MSG0019

@@ -1,0 +1,29 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated chat data, indexes and reports — real conversations never leave the machine
+/data/
+*.db
+*.sqlite3
+*.csv
+!src/chat_insight/data/synthetic_chat.csv
+chunks*.json
+manifest*.json
+chroma*/
+results/
+reports/
+
+# The WhatsApp bridge is cloned separately (see README)
+whatsapp-mcp/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+
+.DS_Store
